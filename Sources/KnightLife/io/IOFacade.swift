@@ -7,7 +7,7 @@ import Foundation
 ///
 /// IOFacade
 ///
-struct IOFacade {
+public struct IOFacade {
     
     private static let fileManagerInstance = FileManager()
     

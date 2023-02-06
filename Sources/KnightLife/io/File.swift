@@ -5,7 +5,7 @@
 import Foundation
 
 @available(macOS 10.15.4, *)
-struct File {
+public struct File {
     
     public static func readFully (contentsOf fileName : String) -> [UInt8] {
         let url = URL(fileURLWithPath: fileName)

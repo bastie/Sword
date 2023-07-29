@@ -4,7 +4,7 @@
 
 ## Package.swift example
 ```
-// swift-tools-version: 5.6
+// swift-tools-version: 5.7
 
 import PackageDescription
 

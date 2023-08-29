@@ -34,6 +34,10 @@ extension UInt4: BinaryInteger {
         }
         value = UIntValue
     }
+    
+    public init(_ uint4: UInt4) {
+            self.init(uint4.getValue())
+        }
 
     public var words: UInt8.Words {
         return UInt8(value).words

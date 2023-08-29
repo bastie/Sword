@@ -5,7 +5,7 @@
 
 extension UInt4: CustomDebugStringConvertible {
     public var debugDescription: String {
-        return "\(value)"
+        return "0x" + String(value, radix: 16).uppercased()
     }
 }
 

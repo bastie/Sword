@@ -465,7 +465,7 @@ public struct UInt4Range: Sequence, IteratorProtocol {
 // Helper Range to use like
 // for next in UInt4.allValues {}
 extension UInt4 {
-    static var allValues: UInt4Range {
+    public static var allValues: UInt4Range {
         return UInt4Range(start: UInt4(0), end: UInt4(15))
     }
 }

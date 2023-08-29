@@ -32,7 +32,7 @@
 /// ```
 ///
 public struct UInt4 {
-    private var value: UInt8 = 0 // 4-Bit-Field
+    internal var value: UInt8 = 0 // 4-Bit-Field
     
     public init() {} // Init
     
@@ -122,7 +122,7 @@ extension Array where Element == UInt8 {
     /// Convert ```[UInt8]``` to ```[UInt4]```
     ///
     /// - Returns: ```[UInt4]```
-    func convertToInt4Array() -> [UInt4] {
+    public func convertToInt4Array() -> [UInt4] {
         var uint4Array: [UInt4] = []
         
         for uint8Value in self {
@@ -146,7 +146,7 @@ extension Array where Element == UInt4 {
     ///
     /// - Returns: ```[UInt8]```
 
-    func convertToUInt8Array() -> [UInt8] {
+    public func convertToUInt8Array() -> [UInt8] {
         var uint8Array: [UInt8] = []
 
         var currentUInt8Value: UInt8 = 0
@@ -177,7 +177,7 @@ extension Array where Element == UInt4 {
 // Other Extending Array with a littlebit mor generic
 extension Array where Element == UInt4 {
     /// Convert ```[UInt4]``` to other BinaryInteger type
-    func convert<T : BinaryInteger>(to targetType: T.Type) -> [T] {
+    public func convert<T : BinaryInteger>(to targetType: T.Type) -> [T] {
         let uint8Array = self.convertToUInt8Array()
         return uint8Array.map { T($0) }
     }

@@ -3,8 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-
-// some trouble here
 extension UInt4: BinaryInteger {
     public typealias Words = UInt8.Words
     //public typealias Words = [UInt]

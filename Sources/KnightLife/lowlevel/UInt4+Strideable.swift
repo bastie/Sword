@@ -4,8 +4,12 @@
  */
 
 ///
+/// Implements Strideable to using it as / in Ranges
 ///
 /// **without Strideable**
+///
+/// *only error - expected follow*
+///
 /// ```Swift
 /// let startValue: UInt4 = 2
 /// let endValue: UInt4 = 7

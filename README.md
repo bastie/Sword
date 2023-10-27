@@ -14,7 +14,7 @@ let package = Package(
         .executable(name: "Moonlight", targets: ["Moonlight"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/bastie/egg.git", .upToNextMajor(from: "0.1.2")),
+        .package(url: "https://github.com/bastie/egg.git", .upToNextMajor(from: "0.6.0")),
     ],
     targets: [
         .executableTarget(
